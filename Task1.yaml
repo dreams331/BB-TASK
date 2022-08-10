@@ -21,6 +21,12 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
+        volumeMounts:
+        - mountPath: /etc/nginx/conf.d/
+          readOnly: true
+          name: nginx-conf
+        - mountPath: /etc/nginx/conf.d/
+          
 ---
 apiVersion: v1
 kind: Service
