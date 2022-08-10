@@ -4,7 +4,7 @@ metadata:
   name: nginx-deployment
 spec:
   strategy:
-    type: Create 
+    type: Rereate 
   selector:
     matchLabels:
       app: nginx
